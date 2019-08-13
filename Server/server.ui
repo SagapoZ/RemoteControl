@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Server</class>
+ <widget class="QMainWindow" name="Server">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>772</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Server</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	
+	background-color: rgb(153, 153, 153);
+}
+#closeBt
+{
+	
+	border-image: url(:/close.png);
+}
+#closeBt:hover
+{
+	
+	border-image: url(:/close_hover.png);
+}
+#minBt
+{
+	
+	border-image: url(:/min.png);
+}
+#minBt:hover
+{
+	
+	border-image: url(:/min_hover.png);
+}
+#maxBt
+{
+	
+	border-image: url(:/max.png);
+}
+#maxBt:hover
+{
+	
+	border-image: url(:/max.png);
+}
+#sendmsgBt
+{
+border-image: url(:/send.png);
+}
+#sendmsgBt:hover
+{
+
+border-image: url(:/send_hover.png);
+}
+#connBt
+{
+border-image: url(:/RMS.png);
+}
+#connBt:hover
+{
+border-image: url(:/RMS_hover.png);
+}
+#stopBt
+{
+border-image: url(:/stop.png);
+}
+#stopBt:hover
+{
+border-image: url(:/stop_hover.png);
+}
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="connBt">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>50</y>
+      <width>45</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="portEdit">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>100</y>
+      <width>231</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);
+color: rgb(255, 255, 255);
+font: 12pt &quot;Arial Rounded MT Bold&quot;;
+border:1px solid#858585
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>port: 8080</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="ipBrowser">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>160</y>
+      <width>231</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);
+font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopBt">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>50</y>
+      <width>45</width>
+      <height>45</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="msgBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>540</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);
+font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+    </property>
+    <property name="lineWrapMode">
+     <enum>QTextEdit::WidgetWidth</enum>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="sendEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>400</y>
+      <width>540</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(153, 153, 153);
+font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>781</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(43, 43, 43);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="closeBt">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>13</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="minBt">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>13</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="maxBt">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>13</y>
+       <width>16</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="sendmsgBt">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>510</y>
+      <width>48</width>
+      <height>48</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>40</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(147, 147, 147);</string>
+    </property>
+    <property name="text">
+     <string>html</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

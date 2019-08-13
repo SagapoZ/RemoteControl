@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>close.png</file>
+        <file>close_hover.png</file>
+        <file>max.png</file>
+        <file>max_hover.png</file>
+        <file>min.png</file>
+        <file>min_hover.png</file>
+        <file>stop.png</file>
+        <file>stop_hover.png</file>
+        <file>send_hover.png</file>
+        <file>send.png</file>
+        <file>RMS.png</file>
+        <file>RMS_hover.png</file>
+    </qresource>
+</RCC>

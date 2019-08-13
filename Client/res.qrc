@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sBt_hover.png</file>
+        <file>cam.png</file>
+        <file>cam2.png</file>
+        <file>file.png</file>
+        <file>file2.png</file>
+        <file>photo.png</file>
+        <file>photo2.png</file>
+        <file>Rcontrl .png</file>
+        <file>Rcontrl_hover.png</file>
+        <file>voice.png</file>
+        <file>voice2.png</file>
+        <file>sendmsg.png</file>
+        <file>sBt.png</file>
+        <file>sendImage.png</file>
+        <file>back.png</file>
+    </qresource>
+</RCC>
